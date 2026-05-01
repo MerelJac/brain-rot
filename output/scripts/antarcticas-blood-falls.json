@@ -1,0 +1,73 @@
+{
+  "title": "Antarctica's Blood Falls: Why a Glacier Bleeds Red",
+  "description": "Taylor Glacier in Antarctica oozes red water from a crack in the ice \u2014 and the cause was locked away for over a million years. The iron-rich brine comes from an ancient subglacial lake sealed in total darkness, where iron slowly leached from bedrock with no oxygen. A 2017 study by Jill Mikucki confirmed the source using geochemical tracing. #Antarctica #BloodFalls #Geography #Science #TaylorGlacier",
+  "tags": [
+    "Antarctica",
+    "Blood Falls",
+    "Taylor Glacier",
+    "weird geography",
+    "subglacial lake",
+    "iron oxide",
+    "geology",
+    "science facts",
+    "trivia",
+    "geography facts"
+  ],
+  "segments": [
+    {
+      "section": "HOOK",
+      "start_seconds": 0,
+      "end_seconds": 3,
+      "voiceover": "A glacier in Antarctica bleeds red \u2014 and the water pouring out has been trapped underground for over a million years.",
+      "on_screen_text": "BLEEDING GLACIER",
+      "broll_cue": "close-up of Blood Falls red water flowing from Taylor Glacier ice face"
+    },
+    {
+      "section": "SPECIFIC",
+      "start_seconds": 3,
+      "end_seconds": 15,
+      "voiceover": "It's called Blood Falls, on Taylor Glacier in the McMurdo Dry Valleys. Beneath it sits a saltwater lake, sealed under ice for around 1.5 million years. In 2017, geochemist Jill Mikucki confirmed the red color comes from iron in that brine \u2014 iron that slowly dissolved from bedrock in a completely oxygen-free environment.",
+      "on_screen_text": "SEALED 1.5 MILLION YEARS",
+      "broll_cue": "aerial view of Taylor Glacier and McMurdo Dry Valleys, Antarctica"
+    },
+    {
+      "section": "PAYOFF",
+      "start_seconds": 15,
+      "end_seconds": 26,
+      "voiceover": "The moment that iron-rich water hits open air, it rusts. Instantly. So the glacier isn't bleeding \u2014 it's oxidizing in real time. And that sealed lake underneath? It still contains living microbes, surviving with no light, no oxygen, and almost no heat.",
+      "on_screen_text": "LIVING MICROBES BENEATH",
+      "broll_cue": "close-up of rust-red brine seeping across white glacier ice at Blood Falls"
+    },
+    {
+      "section": "CTA",
+      "start_seconds": 26,
+      "end_seconds": 30,
+      "voiceover": "Follow for one real fact a day.",
+      "on_screen_text": "",
+      "broll_cue": "wide shot of Blood Falls against the stark white Taylor Glacier"
+    }
+  ],
+  "fact_check_flags": [
+    "'over a million years' \u2014 source material states 1.5 million years; verify this figure against Mikucki et al. 2017 (Nature Geoscience) and confirm it refers to isolation duration, not lake age",
+    "Jill Mikucki as lead author/geochemist on the 2017 study \u2014 confirm name spelling, title, and institutional affiliation",
+    "2017 as the year the iron-source mechanism was confirmed \u2014 verify publication date of the Nature Geoscience paper",
+    "'oxygen-free environment' \u2014 confirm the subglacial lake is described as anoxic in the source paper",
+    "'living microbes' in the subglacial brine \u2014 confirm this is documented in peer-reviewed literature and not contested",
+    "Script says iron 'rusts instantly' on air contact \u2014 verify whether oxidation is visually rapid or gradual; 'instantly' may be an overstatement",
+    "Taylor Glacier location in McMurdo Dry Valleys \u2014 confirm this is geographically accurate",
+    "Hook says 'over a million years' while SPECIFIC says '1.5 million years' \u2014 reconcile for consistency before posting"
+  ],
+  "_meta": {
+    "generated_at": "2026-05-01T22:37:20.621119Z",
+    "source_idea": {
+      "title": "Antarctica's Blood Falls",
+      "hook": "In Antarctica, a glacier bleeds red. Scientists discovered why only in 2017 \u2014 and the answer was hiding for 100 million years.",
+      "fact_summary": "Blood Falls (Taylor Glacier, Antarctica) flows red because of iron oxide in saltwater from an ancient subglacial lake sealed beneath the ice for 1.5 million years. In 2017, researchers using geochemistry proved the iron came from chemical weathering of bedrock in an oxygen-free environment, creating ferrous iron that turns red when exposed to air.",
+      "domain": "geography",
+      "source_hint": "Wikipedia: Blood Falls or Nature Geoscience (Mikucki et al., 2017 study on Taylor Glacier)",
+      "score": 9,
+      "obscurity": 8
+    },
+    "model": "claude-sonnet-4-6"
+  }
+}

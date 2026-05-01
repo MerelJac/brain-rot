@@ -1,0 +1,93 @@
+[
+  {
+    "slug": "the-only-mammal-that-cant-jump",
+    "status": "uploaded",
+    "title": "Elephants Physically Cannot Jump \u2014 It's Not About Weight",
+    "description": "Elephants are the only land mammals anatomically incapable of jumping. Their legs are vertical support columns, not spring-loaded levers \u2014 and no amount of effort changes that. One surprising fact about elephant anatomy explained in 30 seconds. #elephant #animalanatomy #trivia #biology #didyouknow",
+    "tags": [
+      "elephant facts",
+      "animal anatomy",
+      "mammals",
+      "biology trivia",
+      "elephant anatomy",
+      "wildlife facts",
+      "science shorts",
+      "trivia"
+    ],
+    "video_path": "output/videos/the-only-mammal-that-cant-jump.mp4",
+    "fact_check_flags": [
+      "'Only land mammal that cannot jump' \u2014 this is the central claim and must be verified. Confirm no peer-reviewed source lists another land mammal with the same constraint. Common counterexamples cited online include hippos and rhinos; verify both can briefly leave the ground.",
+      "'Lack the tendon and calf-muscle configuration' \u2014 verify the specific anatomical mechanism. Confirm this is documented in anatomical literature (e.g., Journal of Anatomy or equivalent) not just repeated across pop-science sites.",
+      "'Leg bones are stacked vertically like columns' \u2014 verify this columnar leg bone description is anatomically accurate and sourced, not a simplification that misrepresents the skeletal structure.",
+      "'Hippos can get all four feet off the ground' \u2014 this is frequently cited but contested. A 2012 study suggested hippos briefly do this at a gallop; verify this is still the accepted scientific position.",
+      "'Tortoises can get all four feet off the ground' \u2014 verify this specific claim before it airs. It is used as a contrast point and must be accurate.",
+      "Superlative 'only land mammal' \u2014 confirm definition of 'land mammal' used (does it exclude semi-aquatic species, seals, etc.) and that the claim holds under that definition."
+    ],
+    "created_at": "2026-05-01T22:30:17.510087+00:00",
+    "approved_at": "2026-05-01T22:31:12.285664+00:00",
+    "uploaded_at": "2026-05-01T22:31:22.018446+00:00",
+    "youtube_video_id": "If8aXQo96vU"
+  },
+  {
+    "slug": "antarcticas-blood-falls",
+    "status": "uploaded",
+    "title": "Antarctica's Blood Falls: Why a Glacier Bleeds Red",
+    "description": "Taylor Glacier in Antarctica oozes red water from a crack in the ice \u2014 and the cause was locked away for over a million years. The iron-rich brine comes from an ancient subglacial lake sealed in total darkness, where iron slowly leached from bedrock with no oxygen. A 2017 study by Jill Mikucki confirmed the source using geochemical tracing. #Antarctica #BloodFalls #Geography #Science #TaylorGlacier",
+    "tags": [
+      "Antarctica",
+      "Blood Falls",
+      "Taylor Glacier",
+      "weird geography",
+      "subglacial lake",
+      "iron oxide",
+      "geology",
+      "science facts",
+      "trivia",
+      "geography facts"
+    ],
+    "video_path": "output/videos/antarcticas-blood-falls.mp4",
+    "fact_check_flags": [
+      "'over a million years' \u2014 source material states 1.5 million years; verify this figure against Mikucki et al. 2017 (Nature Geoscience) and confirm it refers to isolation duration, not lake age",
+      "Jill Mikucki as lead author/geochemist on the 2017 study \u2014 confirm name spelling, title, and institutional affiliation",
+      "2017 as the year the iron-source mechanism was confirmed \u2014 verify publication date of the Nature Geoscience paper",
+      "'oxygen-free environment' \u2014 confirm the subglacial lake is described as anoxic in the source paper",
+      "'living microbes' in the subglacial brine \u2014 confirm this is documented in peer-reviewed literature and not contested",
+      "Script says iron 'rusts instantly' on air contact \u2014 verify whether oxidation is visually rapid or gradual; 'instantly' may be an overstatement",
+      "Taylor Glacier location in McMurdo Dry Valleys \u2014 confirm this is geographically accurate",
+      "Hook says 'over a million years' while SPECIFIC says '1.5 million years' \u2014 reconcile for consistency before posting"
+    ],
+    "created_at": "2026-05-01T22:38:12.376926+00:00",
+    "approved_at": "2026-05-01T22:39:37.395171+00:00",
+    "uploaded_at": "2026-05-01T22:39:50.335219+00:00",
+    "youtube_video_id": "6PD8HG5cWgk"
+  },
+  {
+    "slug": "finland-has-188000-islands-and-counts-them",
+    "status": "approved",
+    "title": "Finland Has 188,000 Officially Counted Islands \u2014 and the Number Keeps Growing",
+    "description": "Finland doesn't just have islands \u2014 it counts every single one. The Finnish Institute of Natural Resources maintains a verified inventory of 188,000 islands larger than 500 square meters, and the number rises as new surveys are completed. One of the most specific geographic facts in the world. #Finland #Geography #Islands #Trivia #Facts",
+    "tags": [
+      "Finland",
+      "islands",
+      "geography trivia",
+      "did you know",
+      "trivia shorts",
+      "Scandinavia",
+      "Finnish geography",
+      "island count",
+      "surprising facts",
+      "shorts"
+    ],
+    "video_path": "output/videos/finland-has-188000-islands-and-counts-them.mp4",
+    "fact_check_flags": [
+      "SUPERLATIVE: 'No other country maintains a verified island inventory like this' \u2014 verify this claim; Indonesia, Norway, and Canada also have large island counts and may have formal inventories",
+      "NUMBER: 188,000 islands \u2014 confirm this is the current figure from the Finnish Institute of Natural Resources (Luke); number may have been updated since source was last checked",
+      "THRESHOLD: 500 square meters as the legal/official minimum size threshold for island classification \u2014 verify this is the exact Finnish statutory or survey definition, not an approximation",
+      "INSTITUTION: 'Finnish Institute of Natural Resources' \u2014 confirm this is the correct English name for Luke (Luonnonvarakeskus) and that they are the body responsible for the island inventory, not the National Land Survey of Finland (Maanmittauslaitos)",
+      "CLAIM: 'The count goes up whenever new mapping is done' \u2014 verify this is accurate; confirm the inventory is actively updated and not a fixed historical survey",
+      "IMPLICIT SUPERLATIVE: Script implies Finland has the most counted/tracked islands in the world \u2014 verify or soften if this cannot be sourced"
+    ],
+    "created_at": "2026-05-01T22:44:16.614638+00:00",
+    "approved_at": "2026-05-01T22:44:56.813956+00:00"
+  }
+]

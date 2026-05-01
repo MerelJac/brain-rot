@@ -1,0 +1,58 @@
+{
+  "slug": "the-only-mammal-that-cant-jump",
+  "title": "Elephants Physically Cannot Jump \u2014 It's Not About Weight",
+  "description": "Elephants are the only land mammals anatomically incapable of jumping. Their legs are vertical support columns, not spring-loaded levers \u2014 and no amount of effort changes that. One surprising fact about elephant anatomy explained in 30 seconds. #elephant #animalanatomy #trivia #biology #didyouknow",
+  "tags": [
+    "elephant facts",
+    "animal anatomy",
+    "mammals",
+    "biology trivia",
+    "elephant anatomy",
+    "wildlife facts",
+    "science shorts",
+    "trivia"
+  ],
+  "duration": 33.343855,
+  "segments": [
+    {
+      "index": 1,
+      "section": "HOOK",
+      "start": 0,
+      "end": 3,
+      "voiceover": "Elephants are the only land mammals that physically cannot jump.",
+      "on_screen_text": "CANNOT JUMP",
+      "broll_query": "elephant walking slowly",
+      "broll_path": "broll/01.mp4"
+    },
+    {
+      "index": 2,
+      "section": "SPECIFIC",
+      "start": 3,
+      "end": 15,
+      "voiceover": "It's got nothing to do with weight. Their leg bones are stacked vertically \u2014 like columns \u2014 and they lack the tendon and calf-muscle configuration that every other land mammal uses to push off the ground.",
+      "on_screen_text": "LEGS = COLUMNS, NOT SPRINGS",
+      "broll_query": "slow-motion footage elephant",
+      "broll_path": "broll/02.mp4"
+    },
+    {
+      "index": 3,
+      "section": "PAYOFF",
+      "start": 15,
+      "end": 25,
+      "voiceover": "That design is why they can carry thousands of kilograms without shattering a bone. The trade-off is zero spring. Hippos, rhinos, even tortoises can technically get all four feet off the ground. Elephants can't.",
+      "on_screen_text": "HIPPOS CAN. ELEPHANTS CAN'T.",
+      "broll_query": "side-by-side stock footage",
+      "broll_path": "broll/03.mp4"
+    },
+    {
+      "index": 4,
+      "section": "CTA",
+      "start": 25,
+      "end": 30,
+      "voiceover": "Follow for one fact like this every day.",
+      "on_screen_text": "",
+      "broll_query": "elephant face eyes",
+      "broll_path": "broll/04.mp4"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "slug": "finland-has-188000-islands-and-counts-them",
+  "title": "Finland Has 188,000 Officially Counted Islands \u2014 and the Number Keeps Growing",
+  "description": "Finland doesn't just have islands \u2014 it counts every single one. The Finnish Institute of Natural Resources maintains a verified inventory of 188,000 islands larger than 500 square meters, and the number rises as new surveys are completed. One of the most specific geographic facts in the world. #Finland #Geography #Islands #Trivia #Facts",
+  "tags": [
+    "Finland",
+    "islands",
+    "geography trivia",
+    "did you know",
+    "trivia shorts",
+    "Scandinavia",
+    "Finnish geography",
+    "island count",
+    "surprising facts",
+    "shorts"
+  ],
+  "duration": 26.656508,
+  "segments": [
+    {
+      "index": 1,
+      "section": "HOOK",
+      "start": 0,
+      "end": 3,
+      "voiceover": "Finland has 188,000 official islands \u2014 and someone's job is to count them.",
+      "on_screen_text": "188,000 ISLANDS",
+      "broll_query": "aerial drone shot",
+      "broll_path": "broll/01.mp4"
+    },
+    {
+      "index": 2,
+      "section": "SPECIFIC",
+      "start": 3,
+      "end": 11,
+      "voiceover": "The Finnish Institute of Natural Resources tracks every island larger than 500 square meters. That's a legal threshold Finland wrote into its own surveys. The count goes up whenever new mapping is done.",
+      "on_screen_text": "500 SQ METERS = 1 ISLAND",
+      "broll_query": "topographic map finland",
+      "broll_path": "broll/02.mp4"
+    },
+    {
+      "index": 3,
+      "section": "PAYOFF",
+      "start": 11,
+      "end": 14,
+      "voiceover": "No other country maintains a verified island inventory like this. Finland didn't just find the islands \u2014 it defined what an island is.",
+      "on_screen_text": "THEY DEFINED AN ISLAND",
+      "broll_query": "finnish survey map",
+      "broll_path": "broll/03.mp4"
+    },
+    {
+      "index": 4,
+      "section": "CTA",
+      "start": 14,
+      "end": 15,
+      "voiceover": "Follow for one fact a day.",
+      "on_screen_text": "",
+      "broll_query": "static aerial shot",
+      "broll_path": "broll/04.mp4"
+    }
+  ]
+}

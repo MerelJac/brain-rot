@@ -1,0 +1,69 @@
+{
+  "title": "Elephants Physically Cannot Jump \u2014 It's Not About Weight",
+  "description": "Elephants are the only land mammals anatomically incapable of jumping. Their legs are vertical support columns, not spring-loaded levers \u2014 and no amount of effort changes that. One surprising fact about elephant anatomy explained in 30 seconds. #elephant #animalanatomy #trivia #biology #didyouknow",
+  "tags": [
+    "elephant facts",
+    "animal anatomy",
+    "mammals",
+    "biology trivia",
+    "elephant anatomy",
+    "wildlife facts",
+    "science shorts",
+    "trivia"
+  ],
+  "segments": [
+    {
+      "section": "HOOK",
+      "start_seconds": 0,
+      "end_seconds": 3,
+      "voiceover": "Elephants are the only land mammals that physically cannot jump.",
+      "on_screen_text": "CANNOT JUMP",
+      "broll_cue": "elephant walking slowly in profile on dry savanna ground"
+    },
+    {
+      "section": "SPECIFIC",
+      "start_seconds": 3,
+      "end_seconds": 15,
+      "voiceover": "It's got nothing to do with weight. Their leg bones are stacked vertically \u2014 like columns \u2014 and they lack the tendon and calf-muscle configuration that every other land mammal uses to push off the ground.",
+      "on_screen_text": "LEGS = COLUMNS, NOT SPRINGS",
+      "broll_cue": "close-up slow-motion footage of elephant legs and feet while walking"
+    },
+    {
+      "section": "PAYOFF",
+      "start_seconds": 15,
+      "end_seconds": 25,
+      "voiceover": "That design is why they can carry thousands of kilograms without shattering a bone. The trade-off is zero spring. Hippos, rhinos, even tortoises can technically get all four feet off the ground. Elephants can't.",
+      "on_screen_text": "HIPPOS CAN. ELEPHANTS CAN'T.",
+      "broll_cue": "side-by-side stock footage of a running hippo and a walking elephant"
+    },
+    {
+      "section": "CTA",
+      "start_seconds": 25,
+      "end_seconds": 30,
+      "voiceover": "Follow for one fact like this every day.",
+      "on_screen_text": "",
+      "broll_cue": "elephant close-up face and eyes, direct eye contact with camera"
+    }
+  ],
+  "fact_check_flags": [
+    "'Only land mammal that cannot jump' \u2014 this is the central claim and must be verified. Confirm no peer-reviewed source lists another land mammal with the same constraint. Common counterexamples cited online include hippos and rhinos; verify both can briefly leave the ground.",
+    "'Lack the tendon and calf-muscle configuration' \u2014 verify the specific anatomical mechanism. Confirm this is documented in anatomical literature (e.g., Journal of Anatomy or equivalent) not just repeated across pop-science sites.",
+    "'Leg bones are stacked vertically like columns' \u2014 verify this columnar leg bone description is anatomically accurate and sourced, not a simplification that misrepresents the skeletal structure.",
+    "'Hippos can get all four feet off the ground' \u2014 this is frequently cited but contested. A 2012 study suggested hippos briefly do this at a gallop; verify this is still the accepted scientific position.",
+    "'Tortoises can get all four feet off the ground' \u2014 verify this specific claim before it airs. It is used as a contrast point and must be accurate.",
+    "Superlative 'only land mammal' \u2014 confirm definition of 'land mammal' used (does it exclude semi-aquatic species, seals, etc.) and that the claim holds under that definition."
+  ],
+  "_meta": {
+    "generated_at": "2026-05-01T22:29:36.079978Z",
+    "source_idea": {
+      "title": "The Only Mammal That Can't Jump",
+      "hook": "Elephants are the only land mammal that literally cannot jump\u2014their anatomy won't allow it.",
+      "fact_summary": "Elephants lack the calf muscle structure and tendon configuration required for jumping. Their legs are columnar support structures, not spring-loaded levers. This isn't a weight issue; it's skeletal design. They're the only land mammal with this constraint.",
+      "domain": "biology",
+      "source_hint": "Research article in *Journal of Anatomy* or search 'elephant jumping anatomy'",
+      "score": 8,
+      "obscurity": 8
+    },
+    "model": "claude-sonnet-4-6"
+  }
+}

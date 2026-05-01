@@ -1,0 +1,9 @@
+state/
+__pycache__/
+*.pyc
+venv/
+.env
+.env.sh
+run.log.env.sh
+youtube_client_secret.json
+youtube_token.json

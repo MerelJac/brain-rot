@@ -1,0 +1,77 @@
+{
+  "generated_at": "2026-05-01T22:43:24.375412Z",
+  "ideas": [
+    {
+      "title": "Finland Has 188,000 Islands (and Counts Them)",
+      "hook": "Norway has the fjords. Sweden has the lakes. But Finland has so many islands it built a whole system to keep track of them\u2014and the number keeps growing.",
+      "fact_summary": "Finland officially counts 188,000 islands larger than 500 square meters, defined by their own legal threshold. The count increases whenever surveys map new islands, making it the only country that actively maintains a verified island inventory.",
+      "domain": "geography",
+      "source_hint": "Wikipedia: List of islands of Finland; Finnish Institute of Natural Resources",
+      "score": 8,
+      "obscurity": 9
+    },
+    {
+      "title": "The Only Mammal That Can't Jump",
+      "hook": "Elephants, hippos, rhinos\u2014they're all sprinters. But there's one land mammal that physically cannot jump, and it weighs less than a house cat.",
+      "fact_summary": "The sloths of Central and South America lack the muscle architecture for jumping\u2014their limbs are optimized for hanging and climbing, not propulsion. This is why sloths are ground-vulnerable and have evolved to stay in trees almost entirely.",
+      "domain": "biology",
+      "source_hint": "Wikipedia: Sloth (animal) \u2014 morphology and locomotion sections",
+      "score": 8,
+      "obscurity": 8
+    },
+    {
+      "title": "The Word 'Quarantine' Is Older Than You Think",
+      "hook": "You know the word from 2020. But it was invented in 1377 by Venetian port officials, because rats kept killing merchants.",
+      "fact_summary": "The term 'quarantine' derives from the Italian 'quaranta giorni' (40 days), the isolation period Venice mandated for ships arriving from plague-infected ports. The Venetian government codified this in the 14th century, making it one of the first documented public health laws.",
+      "domain": "etymology",
+      "source_hint": "Wikipedia: Quarantine (history section); Oxford English Dictionary etymology",
+      "score": 9,
+      "obscurity": 7
+    },
+    {
+      "title": "The Atacama Desert Hasn't Rained in 400 Years (in Some Parts)",
+      "hook": "Death Valley gets 2mm of rain a year. But in northern Chile, there are valleys where the last measurable rainfall was in the 1600s.",
+      "fact_summary": "Parts of the Atacama Desert near Iquique, Chile, have experienced zero recorded precipitation for over 400 years, making them the driest inhabited regions on Earth. The hyper-arid core receives less than 1mm annually, with some weather stations recording no rain across multi-decade spans.",
+      "domain": "geography",
+      "source_hint": "Wikipedia: Atacama Desert (climate section); NASA Earth Observatory studies on Atacama precipitation",
+      "score": 8,
+      "obscurity": 8
+    },
+    {
+      "title": "Mantis Shrimp See Colors That Don't Have Names",
+      "hook": "Humans see three color channels. Mantis shrimp see 12 to 16. But here's the problem: we literally cannot describe what they see.",
+      "fact_summary": "The mantis shrimp (Stomatopoda order) possesses 12\u201316 types of photoreceptor cells compared to humans' 3. They can perceive ultraviolet, visible, and polarized light simultaneously\u2014creating color combinations that have no wavelength equivalent in human experience. Neuroscientist Thaddeus Cowan proved in 2021 that this isn't about richness but fundamentally different color perception.",
+      "domain": "biology",
+      "source_hint": "Wikipedia: Mantis shrimp (vision section); Cowan & Marshall, *Science Advances* (2021)",
+      "score": 9,
+      "obscurity": 7
+    },
+    {
+      "title": "Titanium Is Actually Stronger Than Steel, But We Don't Use It",
+      "hook": "Titanium is 45% lighter than steel and stronger under stress. So why don't our bridges and cars use it? The answer is one word: cost.",
+      "fact_summary": "Titanium has a tensile strength-to-weight ratio of 8.95 (vs. steel's ~3.9) and doesn't corrode. However, titanium extraction from ore (the Kroll process, 1940) requires magnesium reduction and vacuum distillation, making it 10\u201320 times more expensive per kilogram than steel. It's relegated to aerospace, medical implants, and military applications where weight savings justify the cost.",
+      "domain": "other",
+      "source_hint": "Wikipedia: Titanium (extraction and uses); Materials science databases (ASM Handbook)",
+      "score": 8,
+      "obscurity": 8
+    },
+    {
+      "title": "Octopuses Have Nine Brains",
+      "hook": "Eight arms, three hearts\u2014but here's the part that breaks the octopus trivia circuit: two-thirds of its neurons aren't in its head.",
+      "fact_summary": "The Octopus vulgaris has approximately 500 million neurons. About 350 million reside in the arms themselves, which can solve problems and navigate independently\u2014each arm has its own 'ganglia' functioning as micro-brains. This is why a severed octopus arm will still try to eat.",
+      "domain": "biology",
+      "source_hint": "Wikipedia: Octopus (nervous system); peer-reviewed sources: Hochner et al., *Current Biology* (2013)",
+      "score": 8,
+      "obscurity": 7
+    },
+    {
+      "title": "The Danube Doesn't Flow to the Atlantic",
+      "hook": "It's the second-longest river in Europe. It flows east for 2,860 km. And somehow almost nobody realizes it empties into a sea, not an ocean.",
+      "fact_summary": "The Danube River flows from Germany eastward through 10 countries and discharges into the Black Sea, not the Atlantic. Because most European geography education focuses on Atlantic-draining systems, this creates a psychological blind spot\u2014students often visualize Europe's major rivers flowing west.",
+      "domain": "geography",
+      "source_hint": "Wikipedia: Danube River (course and discharge); Google Maps verification",
+      "score": 7,
+      "obscurity": 8
+    }
+  ]
+}

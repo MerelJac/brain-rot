@@ -1,0 +1,143 @@
+2026-05-01 14:45:05,080 [INFO] ─── produce: starting ───
+2026-05-01 14:45:05,080 [INFO] step 1: generating ideas
+2026-05-01 14:45:05,411 [ERROR] idea_agent failed:
+❌ ANTHROPIC_API_KEY not set. Get one at https://console.anthropic.com
+
+2026-05-01 14:45:07,412 [INFO] produce: made 0 video(s)
+2026-05-01 14:47:25,198 [INFO] ─── produce: starting ───
+2026-05-01 14:47:25,199 [INFO] step 1: generating ideas
+2026-05-01 14:47:46,709 [INFO] chose: Stop Using .apply() — NumPy is 35% Faster (score 9)
+2026-05-01 14:47:46,710 [INFO] step 2: writing script
+2026-05-01 14:48:06,060 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 14:48:06,089 [WARNING] fact-check flags present, will require human approval: ["The '35% faster' claim is sourced from a single blog post — verify with a reproducible benchmark (e.g. timeit on 1M rows with the exact lambda shown) before posting", 'Elapsed times cited (~4s vs ~2.6s) are illustrative — run actual benchmarks on a standard machine and replace with real numbers', 'np.log1p is a NumPy function — confirm it behaves identically to math.log1p for edge cases (zero, negatives) so the before/after is a fair semantic equivalent', "Claim that NumPy 'runs in compiled C' is accurate for ufuncs like np.log1p and np.where — worth confirming this framing holds for the specific functions shown"]
+2026-05-01 14:48:06,089 [INFO] step 3: fetching assets
+2026-05-01 14:48:06,470 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/pNInz6obpgDQGcFmaJgB "HTTP/1.1 401 Unauthorized"
+2026-05-01 14:51:57,038 [INFO] ─── produce: starting ───
+2026-05-01 14:51:57,038 [INFO] step 1: generating ideas
+2026-05-01 14:52:16,654 [INFO] chose: Stop Using .apply() on DataFrames — It's Slow (score 9)
+2026-05-01 14:52:16,654 [INFO] step 2: writing script
+2026-05-01 14:52:35,262 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 14:52:35,297 [WARNING] fact-check flags present, will require human approval: ["The '10 to 30 times slower' claim for .apply() vs vectorized ops — verify with a reproducible benchmark at a specific row count (e.g. 1M rows) before publishing", "The specific timing figures '4.2 seconds vs 0.03 seconds' are illustrative — run actual %timeit benchmarks on a 1M-row DataFrame and replace with real numbers", 'Confirm np.clip is available in current NumPy stable release and the syntax np.clip(series, 0, 1) works directly on a pandas Series without conversion']
+2026-05-01 14:52:35,297 [INFO] step 3: fetching assets
+2026-05-01 14:52:37,099 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/pNInz6obpgDQGcFmaJgB "HTTP/1.1 200 OK"
+2026-05-01 14:52:37,225 [ERROR] asset_agent failed: [Errno 2] No such file or directory: 'ffprobe'
+2026-05-01 14:52:39,230 [INFO] produce: made 0 video(s)2026-05-01 15:02:26,628 [INFO] ─── produce: starting ───
+2026-05-01 15:02:26,629 [INFO] step 1: generating ideas
+2026-05-01 15:02:42,937 [INFO] chose: Stop Trusting ChatGPT's Package Names (score 8)
+2026-05-01 15:02:42,937 [INFO] step 2: writing script
+2026-05-01 15:02:59,652 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 15:02:59,678 [WARNING] fact-check flags present, will require human approval: ["The '1 in 5 packages ChatGPT recommends don't exist' stat (20%) comes from the source context but needs a citable study or original post linked — verify the original claim and whether it applies to ChatGPT specifically, Claude, or LLMs generally before stating it as fact on screen", 'Verify that a community MCP server specifically for package validation exists and is publicly available before referencing it — confirm the link before posting']
+2026-05-01 15:02:59,679 [INFO] step 3: fetching assets
+2026-05-01 15:03:01,033 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/pNInz6obpgDQGcFmaJgB "HTTP/1.1 200 OK"
+2026-05-01 15:03:01,678 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=terminal+pip+install&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:03:02,312 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/35484721/15032412_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:03:03,290 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=chat+chatgpt+suggesting&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:03:03,738 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/16049995/16049995-sd_540_796_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:03:04,344 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=browser+quickly+navigating&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:03:04,405 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/7431691/7431691-sd_506_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:03:05,120 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=dark+background+verify&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:03:05,663 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/4785259/4785259-sd_540_960_24fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:03:06,418 [INFO] HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+2026-05-01 15:03:06,772 [INFO] Processing audio with duration 00:49.598
+2026-05-01 15:03:07,272 [INFO] Detected language 'en' with probability 1.00
+2026-05-01 15:03:09,833 [INFO] step 4: assembling video
+2026-05-01 15:24:28,189 [INFO] ─── produce: starting ───
+2026-05-01 15:24:28,189 [INFO] step 1: generating ideas
+2026-05-01 15:24:48,447 [INFO] chose: Why Octopuses Have Blue Blood (score 9)
+2026-05-01 15:24:48,447 [INFO] step 2: writing script
+2026-05-01 15:25:05,797 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 15:25:05,817 [WARNING] fact-check flags present, will require human approval: ["SUPERLATIVE CHECK: Claim that hemocyanin 'holds onto oxygen better' than hemoglobin in cold water — verify the specific temperature range and oxygen-binding efficiency data from Journal of Experimental Biology cephalopod respiration papers before posting. The relationship is nuanced and temperature-dependent.", 'CLAIM: Hemocyanin is less efficient than hemoglobin in warm water — confirm this is accurate across the relevant temperature ranges, not just a general simplification.', 'CLAIM: Hemocyanin turns blue when oxygenated and colorless when deoxygenated — verify both states are correctly described (some sources describe deoxygenated hemocyanin as pale/colorless vs. white; confirm which is accurate).', "SPECIES SCOPE: Script says 'octopuses' broadly — hemocyanin is used across many mollusks and arthropods, not unique to octopuses. Confirm whether the cold-water adaptation framing applies specifically to octopuses (Octopoda) or is being over-attributed.", "CLAIM: 'Low-oxygen depths' — confirm that the majority of octopus species do inhabit low-oxygen cold environments; some species live in shallow, warmer water. Consider narrowing the claim if needed.", "WORD 'colorless' — double-check: is deoxygenated hemocyanin described as colorless or pale/whitish in peer-reviewed sources?"]
+2026-05-01 15:25:05,818 [INFO] step 3: fetching assets
+2026-05-01 15:25:06,923 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/pNInz6obpgDQGcFmaJgB "HTTP/1.1 200 OK"
+2026-05-01 15:25:13,169 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=live+octopus+moving&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:25:13,683 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/10431979/10431979-sd_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:25:14,401 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=side-by-side+macro+shot&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:25:14,833 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/7299470/7299470-sd_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:25:15,666 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=wide+shot+deep&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:25:16,020 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/33422095/14225458_540_960_60fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:25:16,762 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=octopus+slowly+pulling&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:25:16,819 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/10431983/10431983-sd_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:25:17,451 [INFO] HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+2026-05-01 15:25:17,761 [INFO] Processing audio with duration 00:36.595
+2026-05-01 15:25:18,218 [INFO] Detected language 'en' with probability 1.00
+2026-05-01 15:25:20,390 [INFO] step 4: assembling video
+2026-05-01 15:25:44,104 [INFO] queued for approval: why-octopuses-have-blue-blood
+2026-05-01 15:25:46,108 [INFO] produce: made 1 video(s)
+2026-05-01 15:29:03,413 [INFO] ─── produce: starting ───
+2026-05-01 15:29:03,413 [INFO] step 1: generating ideas
+2026-05-01 15:29:19,634 [INFO] chose: The Only Mammal That Can't Jump (score 8)
+2026-05-01 15:29:19,634 [INFO] step 2: writing script
+2026-05-01 15:29:36,060 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 15:29:36,080 [WARNING] fact-check flags present, will require human approval: ["'Only land mammal that cannot jump' — this is the central claim and must be verified. Confirm no peer-reviewed source lists another land mammal with the same constraint. Common counterexamples cited online include hippos and rhinos; verify both can briefly leave the ground.", "'Lack the tendon and calf-muscle configuration' — verify the specific anatomical mechanism. Confirm this is documented in anatomical literature (e.g., Journal of Anatomy or equivalent) not just repeated across pop-science sites.", "'Leg bones are stacked vertically like columns' — verify this columnar leg bone description is anatomically accurate and sourced, not a simplification that misrepresents the skeletal structure.", "'Hippos can get all four feet off the ground' — this is frequently cited but contested. A 2012 study suggested hippos briefly do this at a gallop; verify this is still the accepted scientific position.", "'Tortoises can get all four feet off the ground' — verify this specific claim before it airs. It is used as a contrast point and must be accurate.", "Superlative 'only land mammal' — confirm definition of 'land mammal' used (does it exclude semi-aquatic species, seals, etc.) and that the claim holds under that definition."]
+2026-05-01 15:29:36,080 [INFO] step 3: fetching assets
+2026-05-01 15:29:37,069 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/pNInz6obpgDQGcFmaJgB "HTTP/1.1 200 OK"
+2026-05-01 15:29:42,235 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=elephant+walking+slowly&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:29:42,591 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/29968104/12860584_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:29:43,405 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=slow-motion+footage+elephant&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:29:44,121 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/35182111/14904763_540_960_60fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:29:45,081 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=side-by-side+stock+footage&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:29:45,709 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/33143549/14125481_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:29:46,533 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=elephant+face+eyes&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:29:46,886 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/31377559/13389151_540_960_60fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:29:48,020 [INFO] HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+2026-05-01 15:29:48,307 [INFO] Processing audio with duration 00:33.344
+2026-05-01 15:29:48,732 [INFO] Detected language 'en' with probability 1.00
+2026-05-01 15:29:50,552 [INFO] step 4: assembling video
+2026-05-01 15:30:17,510 [INFO] queued for approval: the-only-mammal-that-cant-jump
+2026-05-01 15:30:19,514 [INFO] produce: made 1 video(s)
+2026-05-01 15:31:17,064 [INFO] ─── post: checking queue ───
+2026-05-01 15:31:17,064 [INFO] uploading: the-only-mammal-that-cant-jump
+2026-05-01 15:31:17,516 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-05-01 15:31:22,018 [INFO] ✓ uploaded https://youtube.com/watch?v=If8aXQo96vU
+2026-05-01 15:36:44,767 [INFO] ─── produce: starting ───
+2026-05-01 15:36:44,767 [INFO] step 1: generating ideas
+2026-05-01 15:37:04,216 [INFO] chose: Antarctica's Blood Falls (score 9)
+2026-05-01 15:37:04,216 [INFO] step 2: writing script
+2026-05-01 15:37:20,598 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 15:37:20,621 [WARNING] fact-check flags present, will require human approval: ["'over a million years' — source material states 1.5 million years; verify this figure against Mikucki et al. 2017 (Nature Geoscience) and confirm it refers to isolation duration, not lake age", 'Jill Mikucki as lead author/geochemist on the 2017 study — confirm name spelling, title, and institutional affiliation', '2017 as the year the iron-source mechanism was confirmed — verify publication date of the Nature Geoscience paper', "'oxygen-free environment' — confirm the subglacial lake is described as anoxic in the source paper", "'living microbes' in the subglacial brine — confirm this is documented in peer-reviewed literature and not contested", "Script says iron 'rusts instantly' on air contact — verify whether oxidation is visually rapid or gradual; 'instantly' may be an overstatement", 'Taylor Glacier location in McMurdo Dry Valleys — confirm this is geographically accurate', "Hook says 'over a million years' while SPECIFIC says '1.5 million years' — reconcile for consistency before posting"]
+2026-05-01 15:37:20,622 [INFO] step 3: fetching assets
+2026-05-01 15:37:21,979 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/pNInz6obpgDQGcFmaJgB "HTTP/1.1 200 OK"
+2026-05-01 15:37:27,279 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=blood+falls+red&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:37:27,625 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/35752108/15155737_540_960_60fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:37:29,019 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=aerial+view+taylor&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:37:29,684 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/35542316/15057467_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:37:31,042 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=rust-red+brine+seeping&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:37:31,386 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/7829485/7829485-sd_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:37:32,204 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=wide+shot+blood&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:37:32,714 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/15956837/15956837-sd_540_960_24fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:37:33,736 [INFO] HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+2026-05-01 15:37:34,052 [INFO] Processing audio with duration 00:47.462
+2026-05-01 15:37:34,483 [INFO] Detected language 'en' with probability 1.00
+2026-05-01 15:37:37,185 [INFO] step 4: assembling video
+2026-05-01 15:38:12,377 [INFO] queued for approval: antarcticas-blood-falls
+2026-05-01 15:38:14,380 [INFO] produce: made 1 video(s)
+2026-05-01 15:39:24,122 [INFO] ─── post: checking queue ───
+2026-05-01 15:39:24,122 [INFO] nothing approved
+2026-05-01 15:39:42,056 [INFO] ─── post: checking queue ───
+2026-05-01 15:39:42,057 [INFO] uploading: antarcticas-blood-falls
+2026-05-01 15:39:42,572 [INFO] file_cache is only supported with oauth2client<4.0.0
+2026-05-01 15:39:50,335 [INFO] ✓ uploaded https://youtube.com/watch?v=6PD8HG5cWgk
+2026-05-01 15:43:05,898 [INFO] ─── produce: starting ───
+2026-05-01 15:43:05,898 [INFO] step 1: generating ideas
+2026-05-01 15:43:24,428 [INFO] chose: Finland Has 188,000 Islands (and Counts Them) (score 8)
+2026-05-01 15:43:24,429 [INFO] step 2: writing script
+2026-05-01 15:43:40,634 [INFO] HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2026-05-01 15:43:40,667 [WARNING] fact-check flags present, will require human approval: ["SUPERLATIVE: 'No other country maintains a verified island inventory like this' — verify this claim; Indonesia, Norway, and Canada also have large island counts and may have formal inventories", 'NUMBER: 188,000 islands — confirm this is the current figure from the Finnish Institute of Natural Resources (Luke); number may have been updated since source was last checked', 'THRESHOLD: 500 square meters as the legal/official minimum size threshold for island classification — verify this is the exact Finnish statutory or survey definition, not an approximation', "INSTITUTION: 'Finnish Institute of Natural Resources' — confirm this is the correct English name for Luke (Luonnonvarakeskus) and that they are the body responsible for the island inventory, not the National Land Survey of Finland (Maanmittauslaitos)", "CLAIM: 'The count goes up whenever new mapping is done' — verify this is accurate; confirm the inventory is actively updated and not a fixed historical survey", 'IMPLICIT SUPERLATIVE: Script implies Finland has the most counted/tracked islands in the world — verify or soften if this cannot be sourced']
+2026-05-01 15:43:40,668 [INFO] step 3: fetching assets
+2026-05-01 15:43:41,655 [INFO] HTTP Request: POST https://api.elevenlabs.io/v1/text-to-speech/pNInz6obpgDQGcFmaJgB "HTTP/1.1 200 OK"
+2026-05-01 15:43:46,880 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=aerial+drone+shot&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:43:47,438 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/12335096/12335096-sd_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:43:48,153 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=topographic+map+finland&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:43:48,583 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/26528952/11956518_540_960_60fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:43:49,395 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=finnish+survey+map&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:43:49,798 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/8828767/8828767-sd_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:43:50,503 [INFO] HTTP Request: GET https://api.pexels.com/videos/search?query=static+aerial+shot&per_page=15&orientation=portrait "HTTP/1.1 200 OK"
+2026-05-01 15:43:50,847 [INFO] HTTP Request: GET https://videos.pexels.com/video-files/11424308/11424308-sd_540_960_30fps.mp4 "HTTP/1.1 200 OK"
+2026-05-01 15:43:51,446 [INFO] HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-base/revision/main "HTTP/1.1 200 OK"
+2026-05-01 15:43:51,743 [INFO] Processing audio with duration 00:26.656
+2026-05-01 15:43:52,221 [INFO] Detected language 'en' with probability 1.00
+2026-05-01 15:43:53,796 [INFO] step 4: assembling video
+2026-05-01 15:44:16,615 [INFO] queued for approval: finland-has-188000-islands-and-counts-them
+2026-05-01 15:44:18,621 [INFO] produce: made 1 video(s)
+2026-05-01 15:45:01,415 [INFO] ─── post: checking queue ───
+2026-05-01 15:45:01,416 [INFO] daily upload cap reached (2)

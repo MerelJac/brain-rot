@@ -1,0 +1,60 @@
+{
+  "slug": "antarcticas-blood-falls",
+  "title": "Antarctica's Blood Falls: Why a Glacier Bleeds Red",
+  "description": "Taylor Glacier in Antarctica oozes red water from a crack in the ice \u2014 and the cause was locked away for over a million years. The iron-rich brine comes from an ancient subglacial lake sealed in total darkness, where iron slowly leached from bedrock with no oxygen. A 2017 study by Jill Mikucki confirmed the source using geochemical tracing. #Antarctica #BloodFalls #Geography #Science #TaylorGlacier",
+  "tags": [
+    "Antarctica",
+    "Blood Falls",
+    "Taylor Glacier",
+    "weird geography",
+    "subglacial lake",
+    "iron oxide",
+    "geology",
+    "science facts",
+    "trivia",
+    "geography facts"
+  ],
+  "duration": 47.461587,
+  "segments": [
+    {
+      "index": 1,
+      "section": "HOOK",
+      "start": 0,
+      "end": 3,
+      "voiceover": "A glacier in Antarctica bleeds red \u2014 and the water pouring out has been trapped underground for over a million years.",
+      "on_screen_text": "BLEEDING GLACIER",
+      "broll_query": "blood falls red",
+      "broll_path": "broll/01.mp4"
+    },
+    {
+      "index": 2,
+      "section": "SPECIFIC",
+      "start": 3,
+      "end": 15,
+      "voiceover": "It's called Blood Falls, on Taylor Glacier in the McMurdo Dry Valleys. Beneath it sits a saltwater lake, sealed under ice for around 1.5 million years. In 2017, geochemist Jill Mikucki confirmed the red color comes from iron in that brine \u2014 iron that slowly dissolved from bedrock in a completely oxygen-free environment.",
+      "on_screen_text": "SEALED 1.5 MILLION YEARS",
+      "broll_query": "aerial view taylor",
+      "broll_path": "broll/02.mp4"
+    },
+    {
+      "index": 3,
+      "section": "PAYOFF",
+      "start": 15,
+      "end": 26,
+      "voiceover": "The moment that iron-rich water hits open air, it rusts. Instantly. So the glacier isn't bleeding \u2014 it's oxidizing in real time. And that sealed lake underneath? It still contains living microbes, surviving with no light, no oxygen, and almost no heat.",
+      "on_screen_text": "LIVING MICROBES BENEATH",
+      "broll_query": "rust-red brine seeping",
+      "broll_path": "broll/03.mp4"
+    },
+    {
+      "index": 4,
+      "section": "CTA",
+      "start": 26,
+      "end": 30,
+      "voiceover": "Follow for one real fact a day.",
+      "on_screen_text": "",
+      "broll_query": "wide shot blood",
+      "broll_path": "broll/04.mp4"
+    }
+  ]
+}

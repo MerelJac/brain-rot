@@ -1,0 +1,71 @@
+{
+  "title": "Finland Has 188,000 Officially Counted Islands \u2014 and the Number Keeps Growing",
+  "description": "Finland doesn't just have islands \u2014 it counts every single one. The Finnish Institute of Natural Resources maintains a verified inventory of 188,000 islands larger than 500 square meters, and the number rises as new surveys are completed. One of the most specific geographic facts in the world. #Finland #Geography #Islands #Trivia #Facts",
+  "tags": [
+    "Finland",
+    "islands",
+    "geography trivia",
+    "did you know",
+    "trivia shorts",
+    "Scandinavia",
+    "Finnish geography",
+    "island count",
+    "surprising facts",
+    "shorts"
+  ],
+  "segments": [
+    {
+      "section": "HOOK",
+      "start_seconds": 0,
+      "end_seconds": 3,
+      "voiceover": "Finland has 188,000 official islands \u2014 and someone's job is to count them.",
+      "on_screen_text": "188,000 ISLANDS",
+      "broll_cue": "aerial drone shot of Finnish lake archipelago with forested islands"
+    },
+    {
+      "section": "SPECIFIC",
+      "start_seconds": 3,
+      "end_seconds": 11,
+      "voiceover": "The Finnish Institute of Natural Resources tracks every island larger than 500 square meters. That's a legal threshold Finland wrote into its own surveys. The count goes up whenever new mapping is done.",
+      "on_screen_text": "500 SQ METERS = 1 ISLAND",
+      "broll_cue": "topographic map of Finland showing lake district with island clusters marked"
+    },
+    {
+      "section": "PAYOFF",
+      "start_seconds": 11,
+      "end_seconds": 14,
+      "voiceover": "No other country maintains a verified island inventory like this. Finland didn't just find the islands \u2014 it defined what an island is.",
+      "on_screen_text": "THEY DEFINED AN ISLAND",
+      "broll_cue": "close-up of Finnish survey map or satellite image of Saimaa lake archipelago"
+    },
+    {
+      "section": "CTA",
+      "start_seconds": 14,
+      "end_seconds": 15,
+      "voiceover": "Follow for one fact a day.",
+      "on_screen_text": "",
+      "broll_cue": "static aerial shot of single small forested Finnish island surrounded by water"
+    }
+  ],
+  "fact_check_flags": [
+    "SUPERLATIVE: 'No other country maintains a verified island inventory like this' \u2014 verify this claim; Indonesia, Norway, and Canada also have large island counts and may have formal inventories",
+    "NUMBER: 188,000 islands \u2014 confirm this is the current figure from the Finnish Institute of Natural Resources (Luke); number may have been updated since source was last checked",
+    "THRESHOLD: 500 square meters as the legal/official minimum size threshold for island classification \u2014 verify this is the exact Finnish statutory or survey definition, not an approximation",
+    "INSTITUTION: 'Finnish Institute of Natural Resources' \u2014 confirm this is the correct English name for Luke (Luonnonvarakeskus) and that they are the body responsible for the island inventory, not the National Land Survey of Finland (Maanmittauslaitos)",
+    "CLAIM: 'The count goes up whenever new mapping is done' \u2014 verify this is accurate; confirm the inventory is actively updated and not a fixed historical survey",
+    "IMPLICIT SUPERLATIVE: Script implies Finland has the most counted/tracked islands in the world \u2014 verify or soften if this cannot be sourced"
+  ],
+  "_meta": {
+    "generated_at": "2026-05-01T22:43:40.666271Z",
+    "source_idea": {
+      "title": "Finland Has 188,000 Islands (and Counts Them)",
+      "hook": "Norway has the fjords. Sweden has the lakes. But Finland has so many islands it built a whole system to keep track of them\u2014and the number keeps growing.",
+      "fact_summary": "Finland officially counts 188,000 islands larger than 500 square meters, defined by their own legal threshold. The count increases whenever surveys map new islands, making it the only country that actively maintains a verified island inventory.",
+      "domain": "geography",
+      "source_hint": "Wikipedia: List of islands of Finland; Finnish Institute of Natural Resources",
+      "score": 8,
+      "obscurity": 9
+    },
+    "model": "claude-sonnet-4-6"
+  }
+}
