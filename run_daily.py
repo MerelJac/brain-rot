@@ -170,6 +170,7 @@ def post() -> None:
         )
         upload_agent.record_upload(video_id, item["slug"])
         q.mark_uploaded(item["slug"], video_id)
+        q.cleanup_assets(item["slug"])
         log.info("✓ uploaded https://youtube.com/watch?v=%s", video_id)
     except SystemExit as e:
         log.error("upload failed: %s", e)

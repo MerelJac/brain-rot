@@ -7,3 +7,12 @@ venv/
 run.log.env.sh
 youtube_client_secret.json
 youtube_token.json
+
+# Large binary assets — deleted after upload, not worth committing
+output/videos/
+output/assets/*/broll/
+output/assets/*/voiceover.mp3
+output/assets/_work/
+output/run.log
+
+# Keep all JSON metadata (scripts, queue, upload log, captions, segments)

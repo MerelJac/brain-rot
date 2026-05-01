@@ -104,6 +104,25 @@ def mark_uploaded(slug: str, video_id: str) -> bool:
     return set_status(slug, "uploaded", youtube_video_id=video_id)
 
 
+def cleanup_assets(slug: str) -> None:
+    """Delete large binary files for a slug after it has been uploaded."""
+    import shutil
+    base = Path(config.OUTPUT_DIR)
+
+    video = base / config.VIDEOS_DIR / f"{slug}.mp4"
+    if video.exists():
+        video.unlink()
+
+    asset_dir = base / config.ASSETS_DIR / slug
+    for name in ("voiceover.mp3",):
+        p = asset_dir / name
+        if p.exists():
+            p.unlink()
+    broll_dir = asset_dir / "broll"
+    if broll_dir.exists():
+        shutil.rmtree(broll_dir)
+
+
 def has_capacity() -> bool:
     """Don't pile up more pending items than MAX_PENDING."""
     return len(pending()) < config.MAX_PENDING
