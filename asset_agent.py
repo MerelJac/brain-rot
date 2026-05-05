@@ -119,22 +119,32 @@ def download(url: str, out_path: Path) -> None:
 
 # ─── WHISPER CAPTIONS ─────────────────────────────────────────────
 
-def generate_captions(audio_path: Path, out_path: Path) -> None:
-    """Use faster-whisper to produce transcript-style captions, one per natural phrase."""
+def generate_captions(audio_path: Path, out_path: Path, word_out_path: Path | None = None) -> None:
+    """Use faster-whisper to produce phrase-level SRT and optional per-word timing JSON."""
     try:
         from faster_whisper import WhisperModel
     except ImportError:
         sys.exit("❌ faster-whisper not installed. pip install faster-whisper")
 
     model = WhisperModel("base", device="cpu", compute_type="int8")
-    segments, _ = model.transcribe(str(audio_path))
+    segments, _ = model.transcribe(str(audio_path), word_timestamps=True)
+    segments_list = list(segments)
 
     with open(out_path, "w") as f:
-        for idx, seg in enumerate(segments, 1):
+        for idx, seg in enumerate(segments_list, 1):
             text = seg.text.strip()
             if not text:
                 continue
             f.write(f"{idx}\n{_srt_time(seg.start)} --> {_srt_time(seg.end)}\n{text}\n\n")
+
+    if word_out_path:
+        words = []
+        for seg in segments_list:
+            for w in (seg.words or []):
+                text = w.word.strip()
+                if text:
+                    words.append({"word": text, "start": round(w.start, 3), "end": round(w.end, 3)})
+        word_out_path.write_text(json.dumps(words, indent=2))
 
 
 def _srt_time(t: float) -> str:
@@ -195,7 +205,7 @@ def process_script(script_path: Path) -> Path:
     segments_meta = []
     for i, seg in enumerate(script["segments"], 1):
         seg_dur = seg["end_seconds"] - seg["start_seconds"]
-        queries = cue_to_queries(seg["broll_cue"])
+        queries = seg.get("broll_queries") or cue_to_queries(seg["broll_cue"])
         clip_path = asset_dir / "broll" / f"{i:02d}.mp4"
 
         if not clip_path.exists():
@@ -206,7 +216,7 @@ def process_script(script_path: Path) -> Path:
                 if video:
                     matched_query = q
                     break
-                print(f"    ⚠️  no b-roll for '{q}', trying simpler query...")
+                print(f"    ⚠️  no b-roll for '{q}', trying next query...")
             if video:
                 download(video["url"], clip_path)
                 print(f"    {i:02d}. '{matched_query}' → pexels {video['id']}")
@@ -224,11 +234,12 @@ def process_script(script_path: Path) -> Path:
             "broll_path": str(clip_path.relative_to(asset_dir)),
         })
 
-    # 3. Captions via Whisper
-    print("  · Whisper captions...")
+    # 3. Captions + word timings via Whisper (single pass)
+    print("  · Whisper captions + word timings...")
     cap_path = asset_dir / "captions.srt"
-    if not cap_path.exists():
-        generate_captions(vo_path, cap_path)
+    word_timings_path = asset_dir / "word_timings.json"
+    if not cap_path.exists() or not word_timings_path.exists():
+        generate_captions(vo_path, cap_path, word_out_path=word_timings_path)
 
     # 4. Metadata
     (asset_dir / "segments.json").write_text(json.dumps({

@@ -97,6 +97,8 @@ Edit `config.py`:
 ### 3. Smoke-test the pipeline locally
 
 ```bash
+# load env var
+source .env.sh
 # This runs the whole thing for ONE video
 python run_daily.py produce
 

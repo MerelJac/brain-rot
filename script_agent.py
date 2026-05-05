@@ -64,8 +64,9 @@ Output ONLY valid JSON matching this schema:
       "start_seconds": number,
       "end_seconds": number,
       "voiceover": "string — exactly what the narrator says (this is what gets read aloud)",
-      "on_screen_text": "string — punchy 2-5 word caption to burn in (or empty). Should reinforce the most surprising specific in that segment.",
-      "broll_cue": "string — what the viewer should SEE. For trivia: literal subject footage works best. e.g. 'octopus underwater', 'aerial view of Mariana Trench', 'close-up of antique map'. NEVER abstract."
+      "on_screen_text": "string — copy the voiceover text here word for word. Leave empty only for the CTA segment.",
+      "broll_cue": "string — what the viewer should SEE. Descriptive, for human review. e.g. 'octopus swimming underwater, tentacles visible', 'aerial view of Mariana Trench', 'close-up of antique map'.",
+      "broll_queries": ["array of 3-5 Pexels search strings, ordered from most-specific to broadest. Each must be 1-3 words that return real stock footage. Think: what generic footage actually exists on a stock site? e.g. for 'Tassili n'Ajjer rock art': ['cave paintings', 'ancient rock art', 'stone carvings', 'desert archaeology', 'desert']. For 'hippos in river': ['hippo river', 'hippo water', 'hippos africa', 'african wildlife', 'wildlife nature']. NEVER use proper nouns or place names as the only term — always ensure the last 1-2 queries are broad enough to guarantee a hit."]
     }}
   ],
   "fact_check_flags": ["array of any specific claims a human should verify before posting — be aggressive about flagging numbers, dates, and superlatives ('largest', 'oldest', 'only')"]

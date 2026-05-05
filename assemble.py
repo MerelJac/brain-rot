@@ -88,7 +88,22 @@ def concat_clips(clip_paths: list[Path], out_path: Path) -> None:
     list_file.unlink()
 
 
-def burn_captions_and_audio(silent_video: Path, voiceover: Path, captions: Path,
+def _merge_number_tokens(words: list[dict]) -> list[dict]:
+    """Merge tokens split across thousand-separator commas (e.g. '8,' + '178' → '8,178')."""
+    merged = []
+    i = 0
+    while i < len(words):
+        w = words[i]
+        if i + 1 < len(words) and w["word"].endswith(",") and words[i + 1]["word"][:1].isdigit():
+            merged.append({"word": w["word"] + words[i + 1]["word"], "start": w["start"], "end": words[i + 1]["end"]})
+            i += 2
+        else:
+            merged.append(w)
+            i += 1
+    return merged
+
+
+def burn_captions_and_audio(silent_video: Path, voiceover: Path, captions: Path | None,
                             overlays: list[dict], out_path: Path) -> None:
     """Add audio + burn-in captions + on-screen text."""
     # Caption styling — trendy Shorts look: big, bold, yellow with thick black outline.
@@ -104,41 +119,45 @@ def burn_captions_and_audio(silent_video: Path, voiceover: Path, captions: Path,
         "Alignment=2,MarginV=900,Bold=1"
     )
 
-    # Build a complex filter: subtitles first, then drawtext per overlay.
+    # Build a complex filter: optional phrase subtitles, then drawtext per overlay.
     # We write each overlay's text to its own file and use textfile= to avoid
     # FFmpeg drawtext's brutal inline-text escaping rules (colons, percent signs,
     # backslashes, brackets, etc. all need different escapes inline; textfile sidesteps all of it).
-    filters = [f"subtitles={captions}:force_style='{cap_style}'"]
+    filters = []
+    if captions and captions.exists():
+        filters.append(f"subtitles={captions}:force_style='{cap_style}'")
     overlay_text_dir = out_path.parent / "_overlays"
     overlay_text_dir.mkdir(exist_ok=True)
     for i, o in enumerate(overlays):
         if not o["text"]:
             continue
-        text_file = overlay_text_dir / f"overlay_{i:02d}.txt"
-        text_file.write_text(o["text"])
+        text_file = overlay_text_dir / f"overlay_{i:04d}.txt"
+        # Thin spaces (U+2009) between chars simulate letter-spacing; escape % to avoid drawtext warnings
+        spaced = " ".join(o["text"]).replace("%", "%%")
+        text_file.write_text(spaced)
         # textfile= path needs forward slashes and colons escaped on the path itself
         tf_path = str(text_file.absolute()).replace(":", r"\:")
         filters.append(
-            f"drawtext=textfile='{tf_path}':fontsize=64:fontcolor=white:"
-            f"box=1:boxcolor=black@0.55:boxborderw=24:"
+            f"drawtext=textfile='{tf_path}':fontfile=/System/Library/Fonts/Supplemental/Arial.ttf:"
+            f"fontsize=64:fontcolor=0x00C8C8:shadowcolor=white:shadowx=4:shadowy=4:"
             f"x=(w-text_w)/2:y=h*0.18:"
             f"enable='between(t,{o['start']:.2f},{o['end']:.2f})'"
         )
 
     vf = ",".join(filters)
 
-    run([
-        "ffmpeg", "-y",
-        "-i", str(silent_video),
-        "-i", str(voiceover),
-        "-vf", vf,
+    cmd = ["ffmpeg", "-y", "-i", str(silent_video), "-i", str(voiceover)]
+    if vf:
+        cmd += ["-vf", vf]
+    cmd += [
         "-map", "0:v", "-map", "1:a",
         "-c:v", "libx264", "-preset", "medium", "-crf", "20",
         "-c:a", "aac", "-b:a", "192k",
         "-pix_fmt", "yuv420p",
         "-shortest",
         str(out_path),
-    ], stream=True)
+    ]
+    run(cmd, stream=True)
 
 
 def assemble(asset_dir: Path) -> Path:
@@ -164,7 +183,7 @@ def assemble(asset_dir: Path) -> Path:
     print("  · Preparing b-roll clips...")
     prepared = []
     cursor = 0.0
-    overlays = []
+    segment_overlays = []
     for i, (seg, seg_dur) in enumerate(zip(meta["segments"], seg_durations), 1):
         src = asset_dir / seg["broll_path"]
         if not src.exists():
@@ -174,12 +193,23 @@ def assemble(asset_dir: Path) -> Path:
         prepare_segment_clip(src, seg_dur, dst)
         prepared.append(dst)
         if seg.get("on_screen_text"):
-            overlays.append({
+            segment_overlays.append({
                 "text": seg["on_screen_text"],
                 "start": cursor,
                 "end": cursor + seg_dur,
             })
         cursor += seg_dur
+
+    # Use per-word timings if available (shows each voiceover word as it's spoken),
+    # otherwise fall back to the static per-segment on_screen_text.
+    word_timings_path = asset_dir / "word_timings.json"
+    if word_timings_path.exists():
+        word_timings = _merge_number_tokens(json.loads(word_timings_path.read_text()))
+        overlays = [{"text": w["word"], "start": w["start"], "end": w["end"]} for w in word_timings]
+        captions_path = None  # phrase captions are redundant when showing words one-by-one
+    else:
+        overlays = segment_overlays
+        captions_path = asset_dir / "captions.srt"
 
     # 3. Concat into one silent video track
     print("  · Concatenating...")
@@ -195,7 +225,7 @@ def assemble(asset_dir: Path) -> Path:
     burn_captions_and_audio(
         silent_video=silent,
         voiceover=asset_dir / "voiceover.mp3",
-        captions=asset_dir / "captions.srt",
+        captions=captions_path,
         overlays=overlays,
         out_path=out_path,
     )
