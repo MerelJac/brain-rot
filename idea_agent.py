@@ -69,6 +69,12 @@ CRITICAL RULES — read these carefully:
 Already-used facts (DO NOT repeat these or close variations):
 {used_facts}
 
+Recent topic diversity (last 20 produced):
+{recent_domains}
+Look at the distribution above and ACTIVELY AVOID the over-represented domains.
+If biology/ocean/arctic appear more than 2-3 times, generate 0 ideas in those themes.
+Spread across: biology (land animals), geography (non-polar), etymology, astronomy, history, physics/chemistry, geology, linguistics.
+
 Output ONLY valid JSON matching this schema, nothing else:
 {{
   "ideas": [
@@ -121,11 +127,33 @@ def generate_ideas() -> dict:
     else:
         used_str = "(none yet — this is a fresh channel)"
 
+    # Domain distribution of last 20 for diversity nudge
+    recent = used[-20:] if used else []
+    if recent:
+        from collections import Counter
+        counts = Counter(u.get("domain", "other") for u in recent)
+        # Also flag thematic keywords that cluster (ocean, arctic, etc.)
+        themes: Counter = Counter()
+        ocean_words = {"ocean", "sea", "fish", "marine", "coral", "whale", "shark", "deep", "water", "arctic", "greenland", "iceland", "finland", "polar"}
+        for u in recent:
+            text = (u.get("title", "") + " " + u.get("fact_summary", "")).lower()
+            for w in ocean_words:
+                if w in text:
+                    themes["ocean/arctic/water"] += 1
+                    break
+        domain_lines = [f"  {domain}: {count}x" for domain, count in counts.most_common()]
+        if themes:
+            domain_lines.append(f"  ⚠ ocean/arctic/water themed: {themes['ocean/arctic/water']}x — avoid this cluster")
+        recent_domains_str = "\n".join(domain_lines)
+    else:
+        recent_domains_str = "  (no history yet — generate a diverse spread)"
+
     system = IDEA_SYSTEM_PROMPT.format(
         niche=config.NICHE,
         channel_description=config.CHANNEL_DESCRIPTION.strip(),
         voice=config.VOICE_GUIDE.strip(),
         used_facts=used_str,
+        recent_domains=recent_domains_str,
     )
 
     msg = client.messages.create(

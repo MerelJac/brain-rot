@@ -139,7 +139,7 @@ def burn_captions_and_audio(silent_video: Path, voiceover: Path, captions: Path 
         tf_path = str(text_file.absolute()).replace(":", r"\:")
         filters.append(
             f"drawtext=textfile='{tf_path}':fontfile=/System/Library/Fonts/Supplemental/Arial.ttf:"
-            f"fontsize=64:fontcolor=0x00C8C8:shadowcolor=white:shadowx=4:shadowy=4:"
+            f"fontsize=64:fontcolor=0x00C8C8:shadowcolor=black:shadowx=4:shadowy=4:"
             f"x=(w-text_w)/2:y=h*0.18:"
             f"enable='between(t,{o['start']:.2f},{o['end']:.2f})'"
         )

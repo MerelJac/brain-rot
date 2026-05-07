@@ -25,6 +25,7 @@ from pathlib import Path
 
 import config
 import queue_manager as q
+import idea_agent
 import script_agent
 import asset_agent
 import assemble
@@ -78,6 +79,7 @@ def produce_one() -> bool:
         return False
 
     log.info("chose: %s (score %d)", chosen["title"], chosen["score"])
+    idea_agent.add_used_fact(chosen)
 
     # Step 2: script
     log.info("step 2: writing script")
