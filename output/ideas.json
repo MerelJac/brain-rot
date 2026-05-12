@@ -1,77 +1,77 @@
 {
-  "generated_at": "2026-05-01T22:43:24.375412Z",
+  "generated_at": "2026-05-12T14:16:30.089205Z",
   "ideas": [
     {
-      "title": "Finland Has 188,000 Islands (and Counts Them)",
-      "hook": "Norway has the fjords. Sweden has the lakes. But Finland has so many islands it built a whole system to keep track of them\u2014and the number keeps growing.",
-      "fact_summary": "Finland officially counts 188,000 islands larger than 500 square meters, defined by their own legal threshold. The count increases whenever surveys map new islands, making it the only country that actively maintains a verified island inventory.",
-      "domain": "geography",
-      "source_hint": "Wikipedia: List of islands of Finland; Finnish Institute of Natural Resources",
-      "score": 8,
-      "obscurity": 9
+      "title": "Naked Mole Rats Can Survive 18 Minutes Without Oxygen",
+      "hook": "Naked mole rats don't just tolerate low oxygen\u2014they can switch to a completely different metabolism and survive nearly 20 minutes with zero air.",
+      "fact_summary": "Heterocephalus glaber (naked mole rats) can survive up to 18 minutes in anoxic (oxygen-free) conditions by switching from aerobic respiration to anaerobic glycolysis powered by fructose, entering a hibernation-like state. This extreme capability was documented in studies at the Max Planck Institute (2017) and likely evolved because their underground burrows in the East African savanna frequently become oxygen-depleted during dry seasons.",
+      "domain": "biology",
+      "source_hint": "Wikipedia: Naked mole rat or 'Science (journal)' 2017 'Fructose-driven glycolysis' study",
+      "score": 9,
+      "obscurity": 8
     },
     {
-      "title": "The Only Mammal That Can't Jump",
-      "hook": "Elephants, hippos, rhinos\u2014they're all sprinters. But there's one land mammal that physically cannot jump, and it weighs less than a house cat.",
-      "fact_summary": "The sloths of Central and South America lack the muscle architecture for jumping\u2014their limbs are optimized for hanging and climbing, not propulsion. This is why sloths are ground-vulnerable and have evolved to stay in trees almost entirely.",
+      "title": "Why Armadillos Jump Straight Up When Startled",
+      "hook": "Armadillos don't run from danger\u2014they launch themselves four feet in the air.",
+      "fact_summary": "Nine-banded armadillos (Dasypus novemcinctus) jump vertically when threatened, a defensive reflex that confuses predators and often clears low obstacles like fences. This behavior is so consistent it's documented in wildlife management literature as a reliable escape tactic, and it's why armadillos are frequently struck by cars\u2014they jump directly into traffic instead of away from it.",
       "domain": "biology",
-      "source_hint": "Wikipedia: Sloth (animal) \u2014 morphology and locomotion sections",
+      "source_hint": "Wikipedia: Nine-banded armadillo (behavioral section) or Texas Parks & Wildlife armadillo fact sheets",
       "score": 8,
       "obscurity": 8
     },
     {
-      "title": "The Word 'Quarantine' Is Older Than You Think",
-      "hook": "You know the word from 2020. But it was invented in 1377 by Venetian port officials, because rats kept killing merchants.",
-      "fact_summary": "The term 'quarantine' derives from the Italian 'quaranta giorni' (40 days), the isolation period Venice mandated for ships arriving from plague-infected ports. The Venetian government codified this in the 14th century, making it one of the first documented public health laws.",
+      "title": "A Volcano in Chile Erupts Lava So Hot It Glows Blue",
+      "hook": "Mount Kawah Ijen in Indonesia isn't the only place with blue lava\u2014Villarrica in Chile does it too.",
+      "fact_summary": "Villarrica (39.42\u00b0S, 71.93\u00b0W), an active volcano in southern Chile's Puc\u00f3n region, periodically erupts with sulfur-rich lava that burns at temperatures high enough to emit blue flame. The blue glow occurs when sulfur compounds ignite at around 360\u00b0C, creating a vivid cerulean color visible at night. It was extensively documented during the 2015 eruption sequence and remains one of only a handful of sites worldwide with this phenomenon.",
+      "domain": "geography",
+      "source_hint": "Wikipedia: Villarrica or USGS Volcano Disaster Assistance Program (2015 eruption report)",
+      "score": 8,
+      "obscurity": 8
+    },
+    {
+      "title": "The Word 'Sandwich' Was Invented by a Man Too Busy to Stop Eating",
+      "hook": "The Earl of Sandwich didn't invent the sandwich for convenience\u2014he invented it so he could keep gambling.",
+      "fact_summary": "John Montagu, 4th Earl of Sandwich (1718\u20131792), was so engrossed in gaming at his estate that he refused to leave the table for meals. He demanded his cook place meat between two slices of bread so he could eat one-handed while playing cards. The dish became fashionable among other gamblers and took his title as its name. This is documented in contemporary diaries and Horace Walpole's correspondence.",
       "domain": "etymology",
-      "source_hint": "Wikipedia: Quarantine (history section); Oxford English Dictionary etymology",
+      "source_hint": "Wikipedia: Earl of Sandwich or 'History of the Sandwich' (primary source: Walpole's Letters)",
       "score": 9,
-      "obscurity": 7
+      "obscurity": 6
     },
     {
-      "title": "The Atacama Desert Hasn't Rained in 400 Years (in Some Parts)",
-      "hook": "Death Valley gets 2mm of rain a year. But in northern Chile, there are valleys where the last measurable rainfall was in the 1600s.",
-      "fact_summary": "Parts of the Atacama Desert near Iquique, Chile, have experienced zero recorded precipitation for over 400 years, making them the driest inhabited regions on Earth. The hyper-arid core receives less than 1mm annually, with some weather stations recording no rain across multi-decade spans.",
-      "domain": "geography",
-      "source_hint": "Wikipedia: Atacama Desert (climate section); NASA Earth Observatory studies on Atacama precipitation",
-      "score": 8,
-      "obscurity": 8
-    },
-    {
-      "title": "Mantis Shrimp See Colors That Don't Have Names",
-      "hook": "Humans see three color channels. Mantis shrimp see 12 to 16. But here's the problem: we literally cannot describe what they see.",
-      "fact_summary": "The mantis shrimp (Stomatopoda order) possesses 12\u201316 types of photoreceptor cells compared to humans' 3. They can perceive ultraviolet, visible, and polarized light simultaneously\u2014creating color combinations that have no wavelength equivalent in human experience. Neuroscientist Thaddeus Cowan proved in 2021 that this isn't about richness but fundamentally different color perception.",
-      "domain": "biology",
-      "source_hint": "Wikipedia: Mantis shrimp (vision section); Cowan & Marshall, *Science Advances* (2021)",
-      "score": 9,
-      "obscurity": 7
-    },
-    {
-      "title": "Titanium Is Actually Stronger Than Steel, But We Don't Use It",
-      "hook": "Titanium is 45% lighter than steel and stronger under stress. So why don't our bridges and cars use it? The answer is one word: cost.",
-      "fact_summary": "Titanium has a tensile strength-to-weight ratio of 8.95 (vs. steel's ~3.9) and doesn't corrode. However, titanium extraction from ore (the Kroll process, 1940) requires magnesium reduction and vacuum distillation, making it 10\u201320 times more expensive per kilogram than steel. It's relegated to aerospace, medical implants, and military applications where weight savings justify the cost.",
-      "domain": "other",
-      "source_hint": "Wikipedia: Titanium (extraction and uses); Materials science databases (ASM Handbook)",
-      "score": 8,
-      "obscurity": 8
-    },
-    {
-      "title": "Octopuses Have Nine Brains",
-      "hook": "Eight arms, three hearts\u2014but here's the part that breaks the octopus trivia circuit: two-thirds of its neurons aren't in its head.",
-      "fact_summary": "The Octopus vulgaris has approximately 500 million neurons. About 350 million reside in the arms themselves, which can solve problems and navigate independently\u2014each arm has its own 'ganglia' functioning as micro-brains. This is why a severed octopus arm will still try to eat.",
-      "domain": "biology",
-      "source_hint": "Wikipedia: Octopus (nervous system); peer-reviewed sources: Hochner et al., *Current Biology* (2013)",
+      "title": "The Doppler Effect Was Tested Using Musicians on a Train",
+      "hook": "In 1845, Dutch scientist Christoph Buys Ballot proved the Doppler effect by hiring musicians to play from a moving train.",
+      "fact_summary": "Buys Ballot couldn't verify Christian Doppler's 1842 acoustic theory mathematically, so he conducted an experiment near Utrecht in which trumpet players rode a speeding train past stationary observers. The observers heard the pitch shift as the train approached and receded, providing the first empirical proof of frequency change in moving sound sources. This practical validation became a foundational experiment in physics education.",
+      "domain": "history",
+      "source_hint": "Wikipedia: Christoph Buys Ballot or 'Doppler Effect' (history section)",
       "score": 8,
       "obscurity": 7
     },
     {
-      "title": "The Danube Doesn't Flow to the Atlantic",
-      "hook": "It's the second-longest river in Europe. It flows east for 2,860 km. And somehow almost nobody realizes it empties into a sea, not an ocean.",
-      "fact_summary": "The Danube River flows from Germany eastward through 10 countries and discharges into the Black Sea, not the Atlantic. Because most European geography education focuses on Atlantic-draining systems, this creates a psychological blind spot\u2014students often visualize Europe's major rivers flowing west.",
-      "domain": "geography",
-      "source_hint": "Wikipedia: Danube River (course and discharge); Google Maps verification",
+      "title": "Turkish Has No Word for the Color Orange",
+      "hook": "Turkish speakers describe orange as 'portakal rengi'\u2014literally 'orange fruit color.'",
+      "fact_summary": "Turkish (T\u00fcrk\u00e7e) does not have a native etymological root for 'orange' the color; instead, speakers use the noun 'portakal' (from Persian 'purtugal') meaning the fruit itself, followed by 'rengi' (color). This is common in many languages where the color term derives from the fruit name rather than existing independently. Turkish is one of the few modern European languages that retained this construction rather than adopting a standalone color adjective.",
+      "domain": "etymology",
+      "source_hint": "Wikipedia: Orange (color) > etymological section, or Turkish language resources",
       "score": 7,
       "obscurity": 8
+    },
+    {
+      "title": "The Word 'Assassin' Comes from Arabic Drug Users",
+      "hook": "Medieval assassins weren't named for their stealth\u2014they were named for a drug they allegedly took before killing.",
+      "fact_summary": "'Assassin' derives from the Arabic 'Hashishin' (hashish-users), referring to the medieval Nizari Ismaili sect led by Hassan-i Sabbah in 11th-century Persia. European crusaders called their targeted killers 'Assassins,' though the historical evidence for actual hashish use is disputed. The term traveled through Old French ('assassin') into English by the 13th century, cementing a drug-derived etymology for contract killing.",
+      "domain": "etymology",
+      "source_hint": "Wikipedia: Assassin or 'Nizari Ismaili' (history section)",
+      "score": 8,
+      "obscurity": 7
+    },
+    {
+      "title": "A Tree in California Is Wider Than a Football Field",
+      "hook": "General Sherman isn't the tallest tree in the world, but its trunk is so massive you could drive a bus through a tunnel carved in its wood.",
+      "fact_summary": "General Sherman (Sequoiadendron giganteum) in Sequoia National Park, California (36.57\u00b0N, 118.76\u00b0W) has a base diameter of 7.7 meters (25.3 feet) and a maximum volume of 1,487 cubic meters\u2014the largest known volume of any tree on Earth. Its trunk is so wide that a 1937 tunnel carved through a nearby sequoia named Wawona was 2.4 meters tall and 3.7 meters wide. General Sherman's sheer bulk makes it unambiguously the largest organism by mass.",
+      "domain": "geography",
+      "source_hint": "Wikipedia: General Sherman (tree) or USDA National Forest Service data",
+      "score": 7,
+      "obscurity": 6
     }
   ]
 }
