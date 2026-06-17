@@ -94,6 +94,7 @@ Edit `config.py`:
    ```
    Browser opens, sign in, allow. Creates `youtube_token.json`.
 
+to re-fetch youtube token: `rm youtube_token.json && python3 upload_agent.py --auth`
 ### 3. Smoke-test the pipeline locally
 
 ```bash
